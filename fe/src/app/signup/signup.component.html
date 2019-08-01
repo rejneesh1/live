@@ -1,0 +1,18 @@
+<div>
+  <form
+    [formGroup]="signupForm"
+    (ngSubmit)="onSignupSubmit()"
+    class="d-flex flex-column w-50 m-auto mat-app-background p-lg-5"
+  >
+    <mat-form-field>
+      <input matInput placeholder="Name" formControlName="name" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Email" formControlName="email" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Password" formControlName="password" />
+    </mat-form-field>
+    <button mat-raised-button type="submit">SignUp</button>
+  </form>
+</div>
